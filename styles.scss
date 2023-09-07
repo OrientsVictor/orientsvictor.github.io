@@ -1,0 +1,45 @@
+/*
+    This styling follows a mobile first approach.
+*/
+
+// Light Mode Colour Schemes
+$lPrimary: #000018;
+$lSecondary: #FFFFFF;
+$lTertiary: #CECDFF;
+
+// Default Font size
+$mobileFont: 14px;
+$desktopFont: 18px;
+
+// Default Body Styling
+body {
+    background-color: $lTertiary;
+    font-size: $mobileFont;
+    padding: 0;
+    margin: 0;
+}
+
+// Header Section of Webpage
+#header {
+    // Header Background
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(28px);
+
+    // Header Typography
+    #header-text {
+        // Header Text Alignment
+        padding: 8%;
+        text-align: center;
+
+        // Header Text Styling
+        color: $lPrimary;
+        font-family: Cinzel;
+        font-size: 2.5em;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.54px;
+    }
+}
