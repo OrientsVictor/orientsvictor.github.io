@@ -11,18 +11,31 @@ $lTertiary: #CECDFF;
 $mobileFont: 14px;
 $desktopFont: 18px;
 
+//Border Radius
+$borderRadius: 1rem;
+
+//Width
+$DefaultMobileWidth: 352px;
+
 // Default Body Styling
 body {
     background-color: $lTertiary;
+
     font-size: $mobileFont;
+    text-align: center;
+
     padding: 0;
     margin: 0;
+}
+
+#main {
+    padding: 1rem;
 }
 
 // Header Section of Webpage
 #header {
     // Header Background
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px $borderRadius $borderRadius;
     background: rgba(255, 255, 255, 0.82);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(28px);
@@ -42,4 +55,28 @@ body {
         line-height: normal;
         letter-spacing: 0.54px;
     }
+}
+
+// Styling the Profile Picture
+#pfp {
+    img {
+        width: 100%;
+        height: 112px;
+        flex-shrink: 0;
+        object-fit: cover;
+
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+        border-radius: $borderRadius;
+
+
+    }
+}
+
+#about {
+    border-radius: 10px;
+    background: var(--Secondary, #FFF);
+
+    /* Default Drop Shadow */
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+
 }
