@@ -1,37 +1,50 @@
 /*
     This styling follows a mobile first approach.
+    Variables are in the topmost part. Then elements, ID, and finally class.
 */
 
-// Light Mode Colour Schemes
-$lPrimary: #000018;
-$lSecondary: #FFFFFF;
-$lTertiary: #CECDFF;
+// Colour Schemes
+$Primary: #000018;
+$Secondary: #FFFFFF;
+$Tertiary: #CECDFF;
 
 // Default Font size
-$mobileFont: 14px;
-$desktopFont: 18px;
+$mobileFontSize: 18px;
+$desktopFont: 24px;
 
 //Border Radius
 $borderRadius: 1rem;
 
-//Width
-$DefaultMobileWidth: 352px;
-
+// Margin & Padding Properties
 $mobileTopMargin: 1em;
+$mobileMainPadding: 1rem;
+$mobileHeaderTextPadding: 8%;
 
 // Default Body Styling
 body {
-    background-color: $lTertiary;
-    color: $lPrimary;
-    font-size: $mobileFont;
+    background-color: $Tertiary;
+    color: $Primary;
+    font-size: $mobileFontSize;
     text-align: center;
 
     padding: 0;
     margin: 0;
 }
 
+// Default H1 Styling
+h1 {
+    margin: 0.3em;
+    font-family: Cinzel;
+    font-size: 1.77rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+
+// Giving the Content a bit of a padding
 #main {
-    padding: 1rem;
+    padding: $mobileMainPadding;
 }
 
 // Header Section of Webpage
@@ -45,13 +58,13 @@ body {
     // Header Typography
     #header-text {
         // Header Text Alignment
-        padding: 8%;
+        padding: $mobileHeaderTextPadding;
         text-align: center;
 
         // Header Text Styling
-        color: $lPrimary;
+        color: $Primary;
         font-family: Cinzel;
-        font-size: 2.5em;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 900;
         line-height: normal;
@@ -71,11 +84,10 @@ body {
 
         box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
         border-radius: $borderRadius;
-
-
     }
 }
 
+// Styling of all the different Sections of the Page
 .section {
     // Background
     border-radius: 10px;
@@ -87,21 +99,12 @@ body {
     margin-top: $mobileTopMargin;
 }
 
-h1 {
-    margin: 0.3em;
-    font-family: Cinzel;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 1.6px;
-}
-
+// The Regular Font Style
 .regular {
     margin: 0.3em;
 
     font-family: Cinzel;
-    font-size: 1.28em;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 136.3%;

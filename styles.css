@@ -1,13 +1,24 @@
 /*
     This styling follows a mobile first approach.
+    Variables are in the topmost part. Then elements, ID, and finally class.
 */
 body {
   background-color: #CECDFF;
   color: #000018;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  margin: 0.3em;
+  font-family: Cinzel;
+  font-size: 1.77rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.6px;
 }
 
 #main {
@@ -26,7 +37,7 @@ body {
   text-align: center;
   color: #000018;
   font-family: Cinzel;
-  font-size: 2.5em;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -54,20 +65,10 @@ body {
   margin-top: 1em;
 }
 
-h1 {
-  margin: 0.3em;
-  font-family: Cinzel;
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 1.6px;
-}
-
 .regular {
   margin: 0.3em;
   font-family: Cinzel;
-  font-size: 1.28em;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 136.3%;
