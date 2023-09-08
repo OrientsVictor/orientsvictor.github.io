@@ -10,7 +10,7 @@ $Tertiary: #DCDCDC;
 
 // Default Font size
 $mobileFontSize: 18px;
-$desktopFont: 24px;
+$tabletFontSize: 26px;
 
 //Border Radius
 $borderRadius: 1rem;
@@ -108,7 +108,7 @@ a {
 
     img {
         width: 100%;
-        height: 112px;
+        height: 155px;
         flex-shrink: 0;
         object-fit: cover;
 
@@ -264,6 +264,7 @@ a {
     }
 }
 
+// Styling for the footer section
 #footer {
     background-color: $Primary;
     color: $Secondary;
@@ -273,4 +274,83 @@ a {
     font-size: 0.7rem;
     font-family: Cinzel;
     font-weight: 100;
+}
+
+// Modified styling for tablet devices
+@media screen and (min-width: 768px) {
+    body {
+        font-size: $tabletFontSize;
+    }
+
+    #main {
+        padding: 10%;
+    }
+
+    #header {
+        #header-text {
+            padding: 5%
+        }
+    }
+
+    #pfp {
+        margin-top: 5rem;
+
+        img {
+            height: 256px;
+        }
+    }
+
+    .section {
+        padding: 6%;
+    }
+
+    #socials {
+        padding: 1rem;
+    }
+}
+
+// Modified styling for desktop
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 48px;
+    }
+
+    #main {
+        padding: 12%;
+    }
+
+    #header {
+        #header-text {
+            padding: 3%;
+        }
+    }
+
+    #pfp {
+        margin-top: 0;
+
+        img {
+            height: 512px;
+        }
+    }
+
+    .section {
+        padding: 4%;
+    }
+
+    .certification-container {
+        line-height: 80%;
+    }
+
+    .portfolio-container {
+        line-height: 80%;
+    }
+
+    .education-container {
+        line-height: 80%;
+    }
+
+    #socials {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
 }
