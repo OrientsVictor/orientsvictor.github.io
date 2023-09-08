@@ -75,9 +75,13 @@ a {
 
 // Header Section of Webpage
 #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
     // Header Background
     border-radius: 0px 0px $borderRadius $borderRadius;
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.525);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(28px);
 
@@ -100,7 +104,7 @@ a {
 
 // Styling the Profile Picture (Section)
 #pfp {
-    margin-top: $mobileTopMargin;
+    margin-top: 7.1rem;
 
     img {
         width: 100%;
@@ -244,7 +248,9 @@ a {
     }
 }
 
+// Container for Socials
 #socials {
+    // Setting flex properties
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -256,4 +262,15 @@ a {
             margin: 0.6rem;
         }
     }
+}
+
+#footer {
+    background-color: $Primary;
+    color: $Secondary;
+
+    padding: 0.8rem;
+
+    font-size: 0.7rem;
+    font-family: Cinzel;
+    font-weight: 100;
 }
