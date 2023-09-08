@@ -180,4 +180,16 @@ a {
 .education-container .education-info {
   font-size: 0.98rem;
   margin: 0.4rem;
+}
+
+#socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#socials .social-container {
+  display: flex;
+}
+#socials .social-container .social {
+  margin: 0.6rem;
 }/*# sourceMappingURL=styles.css.map */

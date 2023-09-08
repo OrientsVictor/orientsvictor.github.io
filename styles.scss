@@ -190,6 +190,7 @@ a {
         margin: 0.7rem;
     }
 
+    // Text Properties
     text-align: center;
     font-family: Cinzel;
     font-style: normal;
@@ -203,12 +204,13 @@ a {
     }
 }
 
-// Contains the certifications
+// Contains the portfolio
 .portfolio-container {
     h3 {
         margin: 0.7rem;
     }
 
+    // Text Properties
     text-align: center;
     font-family: Cinzel;
     font-style: normal;
@@ -222,11 +224,13 @@ a {
     }
 }
 
+// Container for educational qualifications
 .education-container {
     h3 {
         margin: 0.7rem;
     }
 
+    // Text Properties
     text-align: center;
     font-family: Cinzel;
     font-style: normal;
@@ -237,5 +241,19 @@ a {
     .education-info {
         font-size: 0.98rem;
         margin: 0.4rem
+    }
+}
+
+#socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .social-container {
+        display: flex;
+
+        .social {
+            margin: 0.6rem;
+        }
     }
 }
